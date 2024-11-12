@@ -1,0 +1,197 @@
+/* Base styles */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode body {
+  background-color: #121212;
+  color: #eee;
+}
+
+#navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px; /* Make navbar height smaller */
+  transition: background-color 0.3s;
+}
+
+.dark-mode #navbar {
+  background-color: #333;
+}
+
+#navbar .logo-txt {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dark-mode #navbar .logo-txt {
+  color: #fff;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-actions .circle,
+.profile-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar-actions .circle:hover,
+.profile-circle:hover {
+  background-color: #f1f1f1;
+}
+
+.dark-mode .navbar-actions .circle,
+.dark-mode .profile-circle {
+  background-color: #555;
+}
+
+#datetime {
+  color: #333;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.dark-mode #datetime {
+  color: #aaa;
+}
+
+/* Main content */
+.main-container {
+  padding-top: 80px; /* Adjusted for compact navbar */
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.dark-mode .jumbotron {
+  background-color: #222;
+}
+
+.left-section {
+  max-width: 600px;
+}
+
+.left-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dark-mode .left-section h1 {
+  color: #fff;
+}
+
+.left-section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.dark-mode .left-section p {
+  color: #ccc;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.new-meeting {
+  background-color: #4caf50;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.new-meeting:hover {
+  background-color: #45a049;
+}
+
+.join-input-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+.join-input-wrapper input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.join-input-wrapper button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section .signin-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons .social-icon {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.dark-mode .social-icons .social-icon {
+  color: #eee;
+}
+
+.learn-more {
+  color: #007bff;
+}
+
+.dark-mode .learn-more {
+  color: #3399ff;
+}

@@ -1,0 +1,248 @@
+/* General styling */
+body {
+  font-family: "Roboto", "Lato", sans-serif;
+  font-size: large;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+
+/* Home wrapper */
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(31, 30, 30);
+}
+
+/* Top section */
+.g-top {
+  height: 89vh;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Video container */
+.top-remote-video-show-wrap {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+/* Video styling */
+.video-wrap {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrap > * {
+  flex: 1 1 250px;
+  border: 1px solid white;
+}
+
+video {
+  border: 1px solid gray;
+  width: 300px;
+}
+
+/* Right sidebar (chat and participant details) */
+.g-right-details-wrap {
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ddd;
+}
+
+/* Meeting details heading */
+.meeting-heading-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.meeting-heading-wrap h3 {
+  margin: 0;
+}
+
+.meeting-heading-cross {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Participant and chat heading */
+.people-chat-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.people-heading,
+.chat-heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.material-icons {
+  margin-right: 5px;
+}
+
+/* Chat message section */
+.chat-message-show {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+}
+
+.chat-message-sent {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-message-sent-input-field {
+  flex-grow: 1;
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.chat-message-sent-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #007bff;
+}
+
+/* Bottom control bar */
+.g-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 5px black;
+  z-index: 2;
+}
+
+.bottom-middle > div {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.handRaiseAction img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Top controls */
+.g-top-left {
+  position: absolute;
+  right: 0;
+  height: 8vh;
+  top: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.top-left-participant-wrap {
+  position: relative;
+}
+
+.cursor-pointer:hover {
+  background-color: rgb(226, 225, 225);
+  border-radius: 5px;
+}
+
+.top-left-participant-count {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  font-size: 15px;
+}
+
+/* User box styling */
+.userbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+/* Raised hand indicator */
+.handRaise {
+  height: 30px;
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  display: block;
+}
+
+/* Additional elements */
+.g-details {
+  position: absolute;
+  width: 30vw;
+  background-color: white;
+  margin-top: -135px;
+  counter-reset: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.g-details-heading-show {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.recording-show {
+  position: absolute;
+  margin-bottom: 132px;
+  display: none;
+}
+
+.active {
+  background-color: #00808047;
+  border-radius: 5px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+  #navbar {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    box-shadow: none;
+  }
+}
